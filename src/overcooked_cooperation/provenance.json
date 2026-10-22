@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-22",
+  "core_sources": {
+    "role_flow.py": {
+      "sha256": "4d83126725e576d97948a3dcfad25344848e844b838cda9e4e5374f2a57ec389",
+      "definitions": [
+        "parse_layout_text",
+        "component",
+        "build_model"
+      ]
+    },
+    "check_certificate.py": {
+      "sha256": "ce54e6958aba5e6b797a00417c30bf7650367557bdd1179a4b8cc61d0e514b17",
+      "definitions": [
+        "require",
+        "arc_key",
+        "validate_model",
+        "check_algebra"
+      ]
+    },
+    "native_policy.py": {
+      "sha256": "34fe0bd587f98002ac5be930875cdd1a236a71286b73449c68db9ccb46fcb0e0",
+      "definitions": [
+        "compact",
+        "add",
+        "Atom",
+        "Motion",
+        "supply_route",
+        "delivery_route",
+        "solo_cycle",
+        "UniversalPolicy",
+        "native_canonical"
+      ]
+    },
+    "async_once.py": {
+      "sha256": "d83514ff5b823b4ceb99454b4e2354362c9560cc0f987e1f769e635717d1848e",
+      "definitions": [
+        "LocalLane",
+        "local_projection"
+      ]
+    },
+    "derive.py": {
+      "sha256": "0fbebacc1bf371717a9d397e1eb8570746f53fe63c4b3a8c22a9f9677dbe7080",
+      "definitions": [
+        "check_dual",
+        "derive_potential",
+        "hand_code",
+        "phi"
+      ]
+    },
+    "run_study.py": {
+      "sha256": "fa6cff4c6679145fd540b0fd5a526698a324ae3759c4c77b74e09ddc42e3a2d6",
+      "definitions": [
+        "pot_step_options",
+        "pot_graph"
+      ]
+    }
+  },
+  "native_engine": {
+    "repository": "https://github.com/HumanCompatibleAI/overcooked_ai",
+    "commit": "7e774a1aa29c28b7b69dc0a8903822ac2c6b4f23",
+    "license": "MIT",
+    "files_sha256": {
+      "mdp/overcooked_mdp.py": "71dc8c3f4c261021d423b52e7488db2a84dca01b18f61f21cc90a529556878cc",
+      "mdp/actions.py": "0ff8307289467c9a5da50bc2b38ac944ae26b91a9207fa2db9a41fbb5dec3ae7",
+      "utils.py": "2a6efb567f73fc92eeb93dabbfe451918bfe0e00a1e0b0b5868e26ef059cd056",
+      "static.py": "23e05b6df7d3529c8ab70e8a18d651bf46d60e8f9ba02c1c9214af38f22ee7da"
+    }
+  },
+  "layouts": {
+    "asymmetric_advantages.layout": {
+      "sha256": "3fa464ef9bb0a10bc90035e5b6dd3bcf8e0c7bc15b57ed09e19d9761e8113547",
+      "upstream_path": "src/overcooked_ai_py/data/layouts/asymmetric_advantages.layout"
+    },
+    "coordination_ring.layout": {
+      "sha256": "6ebc08230bbea37d732d33e052cdbefe134347b2ab4037a930337e646c1ea0a3",
+      "upstream_path": "src/overcooked_ai_py/data/layouts/coordination_ring.layout"
+    },
+    "counter_circuit_o_1order.layout": {
+      "sha256": "dc731a93d0637b527fce68bab007414275080909352411bfed1cb3ea227c812f",
+      "upstream_path": "src/overcooked_ai_py/data/layouts/counter_circuit_o_1order.layout"
+    }
+  }
+}

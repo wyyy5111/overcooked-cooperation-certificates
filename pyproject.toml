@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overcooked-cooperation-certificates"
+version = "1.0.0"
+description = "Exact flow-based output bounds and reachable production schedules for Overcooked"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Overcooked Cooperation Certificates contributors"}]
+keywords = ["overcooked", "multi-agent-planning", "linear-programming", "certificates", "scheduling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+solver = ["numpy>=1.26,<3", "scipy>=1.12,<2"]
+native = ["numpy>=1.26,<3"]
+
+[project.scripts]
+occ = "overcooked_cooperation.cli:main"
+
+[project.urls]
+Repository = "https://github.com/wyyy5111/overcooked-cooperation-certificates"
+Issues = "https://github.com/wyyy5111/overcooked-cooperation-certificates/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["overcooked_cooperation*"]
+
+[tool.setuptools.package-data]
+overcooked_cooperation = ["provenance.json", "layouts/*.layout", "layouts/LICENSE",
+  "_vendor/overcooked_ai_py/LICENSE"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+extend-exclude = ["src/overcooked_cooperation/_vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

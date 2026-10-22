@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the implementation."
+title: "Overcooked Cooperation Certificates"
+type: software
+authors:
+  - name: "Overcooked Cooperation Certificates contributors"
+version: 1.0.0
+date-released: 2026-10-22
+license: MIT
+repository-code: "https://github.com/wyyy5111/overcooked-cooperation-certificates"
+url: "https://github.com/wyyy5111/overcooked-cooperation-certificates"
